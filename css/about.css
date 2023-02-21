@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+/* begin: header */
+#header-container {
+    height: 63px;
+    background-color: #242423;
+    box-shadow: #000 0px 2px 10px 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header-container .header {
+    max-width: 1200px;
+    max-height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#header-container .header img {
+    width: 154px;
+    height: 33px;
+}
+
+.header a{
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+}
+
+.header .header-nav li {
+    display: inline-block;
+    margin: 0 21px;
+}
+
+.header-nav li a:hover {
+    color: #ce6d06;
+}
+
+.header-nav li .header-but-now {
+    color: #ce6d06;
+}
+
+.header-button a{
+    min-width: 120px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 16px 31px 12px;
+    background-color: #ce6d06;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.header-button:hover a{
+    color: #000;
+    background-color: #fff;
+}
+/* end: header */
+
+/* begin: about-title */
+#about-title {
+    margin-top: 63px;
+    height: 350px;
+    background: url(../img/elite/bgr.jpeg) no-repeat 50% 0 / cover;
+}
+
+#about-title h1 {
+    text-align: center;
+    line-height: 350px;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 72px;
+
+}
+/* end: about-title */
+
+/* begin: content */
+#content-container {
+    max-height: 700px;
+    background-color: #fff;
+    padding: 140px 0;
+}
+
+.contents {
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+
+.contents img {
+    width: 255px;
+    height: 391px;
+}
+
+.content-text {
+    padding: 15px;
+}
+
+.ct-container-text {
+    max-width: 540px;
+    position: absolute;
+    left: 960px;
+    bottom: 10%;
+}
+
+.content-text h2 {
+    color: #242423;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    letter-spacing: 7.2px;
+}
+
+.content-text p {
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.content-text a {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 21.6px;
+    padding: 16px 58px;
+    background-color: #ce6d06;
+    border-radius: 35px;
+    text-decoration: none;
+}
+
+.ct-container-text a:hover {
+    background-color: #000;
+    text-decoration: underline;
+}
+/* end: content */
+
+/* begin: about-testimonials */
+#about-testimonials {
+    max-height: 1700px;
+    background-color: #ede9e1;
+    padding: 140px 0;
+    text-align: center;
+}
+
+.testimonials-title h2 {
+    color: #242423;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    letter-spacing: 7.2px;
+    line-height: 48px;
+}
+
+.testimonials-title p {
+    max-width: 780px;
+    margin: 32px auto;
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.about-testimonials-container .content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.about-testimonials-container .member-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about-testimonials-container .member-content h3 {
+    color: #242423;
+    display: inline-block;
+    font-size: 24px;
+    font-family:  'Josefin Sans', sans-serif;
+    line-height: 32px;
+    padding: 0 7px;
+}
+.about-testimonials-container .member-content ul,
+.about-testimonials-container .member-content li {
+    display: inline-block;
+    color: #ce6d06;
+} 
+
+.about-testimonials-container .member-content .profile > i {
+    color: #242423;
+    font-size: 12px;
+    line-height: 21px;
+    display: block;
+    margin: 10px 0 40px;
+    padding-top: 10px;
+    border-top: 1px solid #999;
+}
+
+.about-testimonials-container .member-content .profile > a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.about-testimonials-container .member-content .profile > a:hover {
+    color: #ce6d06;
+}
+
+.about-testimonials-container .member-content .profile {
+    padding: 0 52px;
+}
+
+.about-testimonials-container .member-content {
+    display: flex;
+    padding: 40px 100px 40px 130px;
+    text-align: left;
+}
+
+.about-testimonials-container .button {
+    margin-top: 100px;
+}
+
+.about-testimonials-container .button a{
+    color: #fff;
+    background-color: #ce6d06;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    padding: 18px 42px;
+    border-radius: 35px;
+}
+
+.about-testimonials-container .button a:hover {
+    color: #fff;
+    background-color: #000;
+}
+/* end: about-testimonials */
+
+/* begin: products */
+#products-container {
+    background-color: #8c6344;
+    background: url(../img/facts-about/bgr.jpeg) no-repeat 50% 0 / cover;
+    max-height: 1100px;
+    padding: 140px 0;
+}
+
+.products {
+    margin: 0 auto;
+    width: 1200px;
+    max-height: 840px;
+}
+
+.products .content {
+    text-align: center;
+}
+
+.products .content h2 {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    letter-spacing: 7.2px;
+    line-height: 48px;
+}
+
+.products .content p {
+    width: 780px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    display: inline-block;
+    margin: 12px 0 24px;
+}
+
+.list-prod {
+    display: flex;
+}
+
+.list-prod .list-prod-ctn {
+    max-width: 370px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.list-prod-ctn .content-prod h3 {
+    color: #242423;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    margin: 32px 0 24px;
+}
+
+.list-prod-ctn .content-prod p {
+    color: #999;
+    font-size: 12px;
+    line-height: 21px;
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+.list-prod-ctn .content-prod .icon {
+    margin: 30px 0;
+}
+
+.list-prod-ctn .content-prod a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.products .button {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.products .button a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    padding: 18px 42px;
+    background-color: #ce6d06;
+    border-radius: 35px;
+}
+
+.products .button a:hover {
+    color: #000;
+    background-color: #fff;
+}
+/* end: products */
+
+/* begin: footer */
+#footer-bgr {
+    max-height: 400px;
+    background-color: #403832;
+    padding: 80px 0 130px;
+}
+
+.footer-container {
+    color: #a29d9a;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer-pages {
+    flex-basis: 33.33%;
+}
+
+.footer-pages ul {
+    list-style: none;
+    margin-top: 24px;
+    max-width:390px;
+}
+
+.footer-pages ul li {
+    min-width: 195px;
+    float: left;
+}
+
+.footer-pages ul li a {
+    color: #a29d9a;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    line-height: 21px;
+    margin-top: 9px;
+    padding: 0 18px;
+}
+
+.footer-pages ul li a:hover {
+    color: #ce6d06;
+}
+
+.footer-description {
+    flex-basis: 41.6667%;
+    padding: 0 40px;
+}
+
+.footer-description i {
+    font-size: 12px;
+    max-width: 400px;
+    display: inline-block;
+    margin-top: 24px;
+}
+
+.footer-follow {
+    flex-basis: 25%;
+}
+
+.footer-follow .icon {
+    margin-top: 24px;
+}
+
+.footer-follow a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+    line-height: 40px;
+    background-color: #a29d9a;
+    border-radius: 50%;
+    padding: 14px 5px 12px 16px;
+}
+
+.footer-follow .icon-def {
+    padding: 14px 14px 12px 17px;
+}
+
+.footer-follow a:hover {
+    background-color: #ce6d06;
+}
+
+.footer-container h3 {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    border-bottom: 1px solid #a29d9a;
+    padding-bottom: 16px;
+}
+/* end: footer */
